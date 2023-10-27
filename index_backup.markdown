@@ -98,6 +98,7 @@ table
 
 </style>
 
+
 <meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script
 src="./src/b5m.js" id="b5mmain"
 type="text/javascript"></script><script type="text/javascript"
@@ -138,7 +139,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
         </span>
     </h2>
 
-	<center><h2><a href=""><span class="icon">
+	<center><h2><a href="https://arxiv.org/abs/2310.17555"><span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                   </span> Paper</a> | 
                   <a href=""><span class="icon" style="height: 1.7rem;width: 1.3rem;">
@@ -160,7 +161,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
                     <td>
 <p align="justify" width="20%">
 
-The ability for robots to learn and refine behavior after deployment has become ever more important as we design them to operate in unstructured environments like households. In this work, we design a new learning system based on large language model (LLM), OLAF, that allows everyday users to teach a robot using verbal corrections when the robot makes mistakes, e.g., by saying "Stop what you're doing. You should move closer to the cup." A key feature of OLAF is its ability to update the robot's visuomotor neural policy based on the verbal feedback to avoid repeating mistakes in the future. This is in contrast to existing LLM-based robotic systems, which only follow verbal commands or corrections but not learn from them. We demonstrate the efficacy of our design in experiments where a user teaches a robot to perform long-horizon manipulation tasks both in simulation and on physical hardware, achieving on average 20.0% improvement in policy success rate. 
+The ability for robots to learn and refine behavior after deployment has become ever more important as we design them to operate in unstructured environments like households. In this work, we design a new learning system based on large language model (LLM), <strong>OLAF</strong> ☃️, that allows everyday users to teach a robot using verbal corrections when the robot makes mistakes, e.g., by saying "Stop what you're doing. You should move closer to the cup." A key feature of <strong>OLAF</strong> is its ability to update the robot's visuomotor neural policy based on the verbal feedback to avoid repeating mistakes in the future. This is in contrast to existing LLM-based robotic systems, which only follow verbal commands or corrections but not learn from them. We demonstrate the efficacy of our design in experiments where a user teaches a robot to perform long-horizon manipulation tasks both in simulation and on physical hardware, achieving on average 20.0% improvement in policy success rate. 
 
 </p></td></tr></table>
 </p>
@@ -258,6 +259,118 @@ The <strong>OLAF</strong> pipeline consists of three steps: User Interaction, Da
 <hr>
 
 
+<h1 align="center">Tasks</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+We evaluate OLAF on four tasks in simulation and two tasks on real robot. The tasks in simulation are fine-grained manipulation tasks while the tasks on real robot are long-horizon, multi-staged tasks.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center">Simulation</h2>
+
+<table border="0" cellspacing="5" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle">
+      <video muted autoplay controls loop width="180px">
+        <source src="./video/can.mp4"  type="video/mp4">
+      </video>
+      <p>Pick Place Can</p>
+    </td>
+    <td align="center" valign="middle">
+      <video muted autoplay controls loop width="180px">
+        <source src="./video/threading.mp4"  type="video/mp4">
+      </video>
+      <p>Threading</p>
+    </td>
+    <td align="center" valign="middle">
+      <video muted autoplay controls loop width="180px">
+        <source src="./video/square.mp4"  type="video/mp4">
+      </video>
+      <p>Square</p>
+    </td>
+    <td align="center" valign="middle">
+      <video muted autoplay controls loop width="180px">
+        <source src="./video/coffee.mp4"  type="video/mp4">
+      </video>
+      <p>Coffee Machine</p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+<br>
+
+<h2 align="center">Real Robot</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle" valign="top">
+      <video muted autoplay controls loop width="100%">
+        <source src="./video/bin_2x.mp4"  type="video/mp4">
+      </video>
+      <p>PickPlace-Bin: <br> Pick up the pea can and popcorn and place them into the bin in sequence </p>
+    </td>
+    <td align="center" valign="middle" valign="top">
+      <video muted autoplay controls loop width="100%">
+        <source src="./video/basket_2x.mp4"  type="video/mp4">
+      </video>
+      <p>PickPlace-Drawer-Basket: <br> Pick up the peach can and place it in the drawer, and pick up the chocolate box and place it into the basket</p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 align="center" style="font-size:20px;">(played in 2X speed)</h3>
+
+<br>
+<hr>
+
+
+<h1 align="center">Qualitative Results</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+We show that OLAF helps the robot policy produce bette quality behaviors. Consider the case when the human intervention is available: while the BC baseline learn from data that corrects its behavior after it commits a mistake, OLAF with action relabeling learns what the robot could have done to avoid the mistakes in the first place. Overriding erroneous actions helps to learn the accurate actions that prevent the mistakes from happening, rather than merely recovering from the mistakes.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <td align="center" valign="middle" valign="top">
+      <video muted autoplay controls loop width="400px">
+        <source src="./video/bc_intv_example.mp4"  type="video/mp4">
+      </video>
+      <p><strong>BC baseline</strong>: BC learns the mistake actions, and then how to correct from the mistakes. It can sometimes still repeat the same mistakes.</p>
+    </td>
+    <td align="center" valign="middle" valign="top">
+      <video muted autoplay controls loop width="400px">
+        <source src="./video/ours_intv_example.mp4"  type="video/mp4">
+      </video>
+      <p><strong>OLAF</strong>: OLAF directly learns the optimal behavior since action relabeling overrides wrong actions.</p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
 <h1 align="center">Example Prompts</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
@@ -286,6 +399,22 @@ Prompts of an LLM as a critic for action relabeling: The system prompt (top) spe
 <br>
 <hr>
 
+<h1 align="center">Citation</h1>
+
+<table align=center width=800px>
+              <tr>
+                  <td>
+                  <left>
+<pre><code style="display:block; overflow-x: auto">@misc{liu2023interactive,
+      title={Interactive Robot Learning from Verbal Correction}, 
+      author={Huihan Liu and Alice Chen and Yuke Zhu and Adith Swaminathan and Andrey Kolobov and Ching-An Cheng},
+      year={2023},
+      eprint={2310.17555},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+</code></pre>
+</left></td></tr></table>
 
 <div style="display:none">
 <!-- Global site tag (gtag.js) - Google Analytics -->
