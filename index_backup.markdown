@@ -171,6 +171,121 @@ The ability for robots to learn and refine behavior after deployment has become 
 
 
 
+<h1 align="center">Overview</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+<strong>OLAF</strong> is a LLM-based learning system designed for updating a robot's visuomotor neural-network-based policy using verbal corrections given by regular non-expert users. To train the robot, the user simply needs to watch to robot performing a task, stop the robot when the user thinks the robot is not able to finish the task, and then provide an instruction in natural language on how the robot can do better.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/fig1.png" style="width:85%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<hr>
+
+<h1 align="center">Motivating Example</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+We depicts an use case of OLAF for updating a robot manipulator's policy. Here the robot is tasked to place the tomato sauce in the basket. The robot opens its gripper and moves forward. But instead of going to the tomato sauce, it goes to the right. Upon seeing this surprising behavior, the user stops the robot by pressing a stop button and says "Stop. To pickup the tomato sauce, you should move to your left."
+<br>
+Given a robot trajectory interrupted by the user, OLAF relabels the suboptimal actions in the trajectory segment leading up to the trajectory's termination with good actions based on the user's verbal correction.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/fig3.png" style="width:100%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<hr>
+
+<h1 align="center">OLAF System</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+The <strong>OLAF</strong> pipeline consists of three steps: User Interaction, Data Synthesis, and Policy Update. In User Interaction, it collects pairs of {robot trajectory, verbal correction} of trajectories stopped by the user. In Data Synthesis, it uses the LLM as a critic to select the action (from a pool of action candidates) that best matches the user's verbal correction and relabels the pre-intervention trajectory segments (in red). In Policy Update, it updates the policy by performing behavior cloning on the newly synthesized data and the previously collected data.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/fig2.png" style="width:100%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<hr>
+
+
+<h1 align="center">Example Prompts</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+Prompts of an LLM as a critic for action relabeling: The system prompt (top) specify system-level desired behavior, the context prompt (middle) describes the task level instruction, and the action relabeling prompt (bottom) includes the trajectory-level information and the verbal correction. The black denotes the template and the blue denotes user- or sensor-dependent information. We highlight the action proposal in blue background.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr>  <td align="center" valign="middle">
+    <img src="./src/fig4.png" style="width:85%;">
+  </td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+<hr>
+
 
 <div style="display:none">
 <!-- Global site tag (gtag.js) - Google Analytics -->
