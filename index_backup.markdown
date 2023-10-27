@@ -334,7 +334,7 @@ We evaluate OLAF on four tasks in simulation and two tasks on real robot. The ta
 <hr>
 
 
-<h1 align="center">Qualitative Results</h1>
+<h1 align="center">OLAF produce bette quality policy behaviors</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
@@ -369,7 +369,481 @@ We show that OLAF helps the robot policy produce bette quality behaviors. Consid
 </table>
 
 
+<br>
+<hr>
 
+<h1 align="center">Evaluation Rollouts</h1>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td>
+  <p align="justify" width="20%">
+
+We provide the evaluation rollouts of OLAF and BC baseline to visualize the trajectory behavior and failure modes, as well as to present the entire evaluate process.
+
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center">OLAF: 73.5% Success Rate</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <!-- First row of 5 videos -->
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_0-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_1-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_2-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_3-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_4-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_5-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_6-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_7-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_8-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_9-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_10-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_11-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_12-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_13-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_14-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_15-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_16-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_17-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_18-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_19-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_20-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_21-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_22-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_23-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_24-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+    <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_25-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_26-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_27-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_28-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_29-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+      <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_30-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_31-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_32-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_ours_videos/videosdemo_33-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+<br>
+<hr>
+
+<h2 align="center">BC: 35.3% Success Rate</h2>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <tr>
+    <!-- First row of 5 videos -->
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_0-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_1-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_2-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_3-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_4-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_5-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_6-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_7-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_8-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_9-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_10-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_11-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_12-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_13-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_14-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_15-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_16-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_17-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_18-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_19-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_20-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_21-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_22-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_23-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_24-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+    <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_25-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_26-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_27-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_28-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_29-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+      <tr>
+      <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_30-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_31-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls  width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_32-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+    <td align="center" valign="top">
+      <video muted autoplay controls width="150px">
+        <source src="./video/bin_eval_bc_videos/demo_33-0.mp4" type="video/mp4">
+      </video>
+      <p></p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
 
 <h1 align="center">Example Prompts</h1>
 
