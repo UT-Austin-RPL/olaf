@@ -334,7 +334,7 @@ We evaluate OLAF on four tasks in simulation and two tasks on real robot. The ta
 <hr>
 
 
-<h1 align="center">OLAF produce bette quality policy behaviors</h1>
+<h1 align="center">OLAF produces better quality policy behaviors</h1>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td>
