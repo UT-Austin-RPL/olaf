@@ -378,7 +378,7 @@ We show that OLAF helps the robot policy produce bette quality behaviors. Consid
   <tbody><tr><td>
   <p align="justify" width="20%">
 
-We provide the real robot evaluation rollouts of OLAF and BC baseline to visualize the trajectory behavior and failure modes, as well as to present the entire evaluate process.
+We provide the real robot evaluation rollouts of OLAF and BC baseline to visualize the trajectory behavior and failure modes, as well as to present the entire evaluate process. All videos are played in <strong>1X</strong> speed.
 
 </p>
 </td>
