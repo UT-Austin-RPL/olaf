@@ -1,8 +1,0 @@
-@misc{liu2023interactive,
-      title={Interactive Robot Learning from Verbal Correction}, 
-      author={Huihan Liu and Alice Chen and Yuke Zhu and Adith Swaminathan and Andrey Kolobov and Ching-An Cheng},
-      year={2023},
-      eprint={2310.17555},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
